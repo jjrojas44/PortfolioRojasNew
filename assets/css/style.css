@@ -18,12 +18,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", sans-serif;
   margin: 0;
 }
 
 h2 {
-  color: #292929;
+  color: #b8a07e;
   font-weight: 600;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 h4 {
@@ -45,6 +47,7 @@ a:hover {
 p {
   margin: 25px 0;
   padding: 0;
+  font-family: "Helvetica Neue", sans-serif;
   font-size: 15px;
   color: #999999;
   line-height: 28px;
@@ -748,12 +751,14 @@ div.container {
 
 .patelco {
   text-align: center;
-  border-bottom: 2pt dotted #f58e84;
+  border-bottom: 2pt dotted #b8a07e;
 }
 .patelco img {
   padding-bottom: 5px;
-  width: 25%;
+  width: 55%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .secondheader {
@@ -766,11 +771,311 @@ h4 {
   font-size: 1.25em;
 }
 
-img2 {
+.secondheader img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+.aside1 {
+  float: right;
+  font-family: "Helvetica Neue", sans-serif; 
+  border: 2px solid #898989;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.h9 {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  color: #898989;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", sans-serif;
+  background: linear-gradient(to right, #898989, #b8a07e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  transition: background-position 0.5s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.h9:hover {
+  background-position: right center;
+}
+
+.h9:before {
+  content: "\f0a8";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 24px;
+}
+
+.h9:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.h9:hover:after {
+  opacity: 1;
+}
+
+figcaption {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.module1 li {
+  list-style-type: none; /* Remove bullet points */
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+  position: relative;
+  background: linear-gradient(to right, #b8a07e, #898989);
+  padding: 10px 10px 10px 30px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.module1 li::before {
+  content: "\f057"; /* Use a custom icon instead of a bullet */
+  font-family: "FontAwesome";
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.module1 li:hover {
+  background: linear-gradient(to right, #898989, #b8a07e);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add a larger box shadow on hover */
+}
+
+.module1 li {
+  list-style-type: none; /* Remove bullet points */
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+  position: relative;
+  background: linear-gradient(to right, #b8a07e, #898989);
+  padding: 10px 10px 10px 30px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.module1 li::before {
+  content: "\f057"; /* Use a custom icon instead of a bullet */
+  font-family: "FontAwesome";
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.module1 li:hover {
+  background: linear-gradient(to right, #898989, #b8a07e);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add a larger box shadow on hover */
+}
+
+.module1 li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.module1 li:hover::after {
+  opacity: 1;
+}
+
+div.pictures1 {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+div.pictures2{
+  width: 80%;
+  background: linear-gradient(to bottom right,  #898989, #b8a07e);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px; 
+  font-family: "Helvetica Neue", sans-serif;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+div.pictures2:hover img {
+  transform: scale(1.05);
+}
+
+div.pictures2:hover::before {
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+div.pictures2 figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 16px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+div.pictures2:hover figcaption {
+  opacity: 1;
+}
+
+div.pictures2 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+p {
+  margin: 25px 0;
+  padding: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  color: #898989;
+  line-height: 28px;
+}
+
+.paragraph-1 {
+  margin: 25px 0;
+  padding: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 28px;
+}
+
+
+div.pictures3{
+  width: 80%;
+  background: linear-gradient(to bottom right,  #898989, #b8a07e);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px; 
+  font-family: "Helvetica Neue", sans-serif;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+div.pictures3:hover img {
+  transform: scale(1.05);
+}
+
+div.pictures3:hover::before {
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+div.pictures3 figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 16px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+div.pictures3:hover figcaption {
+  opacity: 1;
+}
+
+div.pictures3 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 500px; /* adjust the max-height value as needed */
+  object-fit: cover; /* make sure the image fills the container while preserving aspect ratio */
+  transition: all 0.5s ease-in-out;
+}
+
+div.pictures3:hover {
+  transform: scale(1.1); /* adjust the scale value as needed */
+}
+
+
 
 /*--------------------------------------------------------------
 # Journal
