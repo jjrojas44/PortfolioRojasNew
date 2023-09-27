@@ -692,7 +692,9 @@ div.container {
   padding-top: 40px;
 }
 .portfolio-details .portfolio-details-slider img {
-  width: 100%;
+  width: 500;
+  height: 300;
+  object-fit: cover;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
@@ -956,6 +958,30 @@ div.pictures2:hover img {
 }
 
 div.pictures2:hover::before {
+  animation: animate 10s linear infinite;
+}
+
+div.pictures3{
+  width: 30%;
+  background: linear-gradient(to bottom right,  #898989, #b8a07e);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px; 
+  font-family: "Helvetica Neue", sans-serif;
+  flex-wrap: wrap;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  height: auto; /* Maintain aspect ratio */
+  }
+
+
+div.pictures3:hover img {
+  transform: scale(1.05);
+}
+
+div.pictures3:hover::before {
   animation: animate 10s linear infinite;
 }
 
