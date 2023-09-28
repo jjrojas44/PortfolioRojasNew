@@ -974,11 +974,18 @@ div.pictures3{
   display: flex;
   justify-content: space-between;
   height: auto; /* Maintain aspect ratio */
+  flex-direction: row;
   }
 
 
 div.pictures3:hover img {
   transform: scale(1.05);
+  margin-right: 10px;
+}
+
+div.pictures3 img {
+  flex: 1; /* Distribute the available space evenly */
+  margin-right: 10px; /* Add spacing between images */
 }
 
 div.pictures3:hover::before {
